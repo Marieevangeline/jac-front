@@ -2,10 +2,10 @@ import React from "react";
 import {View, Text } from "react-native";
 import Style from "../../Style";
 
-function AccountView() {
+function AccountView(props: any) {
     return(
         <View style={Style.container}> 
-            <Text>Accout</Text>
+            <Text>Account</Text>
         </View>
     )
 

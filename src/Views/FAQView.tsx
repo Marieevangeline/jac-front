@@ -6,7 +6,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import Style from "../../Style";
 
-function FAQView() {
+function FAQView(props: any) {
     return(
         <View style={Style.container}> 
             <Text>FAQ</Text>
