@@ -19,3 +19,4 @@ function AuthProvider({ children }: any) {
 const useAuth = () => useContext(AuthContext);
 
 export { AuthProvider, useAuth };
+

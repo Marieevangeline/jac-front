@@ -1,23 +1,20 @@
-import React from "react";
-import { Text, ScrollView, View, Button } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator} from '@react-navigation/native-stack';
+import React from 'react';
+import {Text, View, Button, Image} from 'react-native';
 import { useAuth } from "../Context/AuthContext";
-import SignUpView from './SignupView';
-import Changemotdepasse from './Changemotdepasse';
 import Style from '../../Style';
 
-function LoginView (navigation): {
+function LoginView ({navigation}:any) {
     const { login } = useAuth();
     return (
     <View style={Style.container}>
+      <Image source={require('../../assets/logo_UNICEF.png')} />
       <Text>Ecran de connexion</Text>
       <Text>Connexion à mon compte UNICEF</Text>
       <Button title="Se connecter" onPress={() => login()} />
-      <Button title="Mot de passe oublié ?" onPress={() => navigation.navigator('Changemotdepasse')} />
-      <Text>Pas encore inscrit ?</Text>
-      <Button title="S'inscrire" onPress={() => navigation.navigator('SignUpView')} />
+      <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
+      <Text> Pas encore inscrit ? </Text><Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
     </View>
   );
 }
 export default LoginView;
+

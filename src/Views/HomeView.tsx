@@ -10,6 +10,6 @@ function HomeView(props: any) {
             <text>Page d'accueil</text>
         </View>
     );
-  }
+  
 }
 export default HomeView;

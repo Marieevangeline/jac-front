@@ -1,6 +1,6 @@
-import { StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 
-backgroundColor_default = "#ffffff";
+backgroundColor_default = "#FBFBEB";
 
 export default StyleSheet.create({
     container: {
@@ -9,4 +9,12 @@ export default StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    text_button: {
+      color: '#1962D0',
+      fontSize: '13',
+      fontStyle: 'normal',
+      textAlignVertical: 'auto',
+      
+
+    }
   });
