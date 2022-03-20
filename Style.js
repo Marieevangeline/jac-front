@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-backgroundColor_default = "#FBFBEB";
+backgroundColor_default = "#A9EAFE";
 
 export default StyleSheet.create({
     container: {
