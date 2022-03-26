@@ -1,15 +1,18 @@
 import React from "react";
-import { View, StyleSheet, TextInput } from "react-native";
+import { View, TextInput, Image} from "react-native";
+import Style from "../../Style";
+
 
 const PasswordTextInput = () => {
-  const [number, onChangeNumber] = React.useState("null");
+  const [number, setText] = React.useState("null");
 
   return (
     <View>
+      <Image source={require('../../assets/croise-les-yeux.png')} />
       <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
+        style={Style.input}
+        onChangeText={newNumber => setText(newNumber)}
+        defaultValue={number}
         placeholder="Mot de passe"
         keyboardType="numeric"
       />
@@ -17,13 +20,5 @@ const PasswordTextInput = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
-});
 
 export default PasswordTextInput;

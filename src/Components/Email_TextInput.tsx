@@ -1,28 +1,23 @@
-import React from "react";
-import { View, StyleSheet, TextInput } from "react-native";
+import React, { useState} from "react";
+
+import { View, TextInput, Image } from "react-native";
+import Style from "../../Style";
 
 const EmailTextInput = () => {
-  const [text, onChangeText] = React.useState("null");
+  const [text, setText] = useState('');
   
   return (
-    <View>
+    <View style={{padding: 10}}>
+      <Image source={require('../../assets/@.png')} />
       <TextInput
-        style={styles.input}
-        onChangeText={onChangeText}
-        value={text}
-        placeholder="useless placeholder"
-      />
+        style={Style.input}
+        onChangeText={newText => setText(newText)}
+        defaultValue={text}
+        placeholder="Adresse mail"
+       />
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
-});
 
 export default EmailTextInput;
