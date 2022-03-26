@@ -1,6 +1,8 @@
 import React from 'react';
 import {Text, View, Button, Image} from 'react-native';
 import { useAuth } from "../Context/AuthContext";
+import PasswordTextInput from '../Components/Password_Textinput';
+import EmailTextInput from '../Components/Email_TextInput';
 import Style from '../../Style';
 
 function LoginView ({navigation}:any) {
@@ -10,6 +12,8 @@ function LoginView ({navigation}:any) {
       <Image source={require('../../assets/logo_UNICEF.png')} />
       <Text>Ecran de connexion</Text>
       <Text>Connexion à mon compte UNICEF</Text>
+      <EmailTextInput/>
+      <PasswordTextInput/>
       <Button title="Se connecter" onPress={() => login()} />
       <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
       <Text> Pas encore inscrit ? </Text><Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>

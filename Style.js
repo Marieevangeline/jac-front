@@ -13,8 +13,13 @@ export default StyleSheet.create({
       color: '#1962D0',
       fontSize: '13',
       fontStyle: 'normal',
-      textAlignVertical: 'auto',
-      
-
-    }
+      textAlignVertical: 'auto',     
+    },
+    input: {
+      margin: 12,
+      borderBottomWidth: 1,
+      borderBottomWidth : 'DDDEE',
+      padding: 10,
+      frontFamily: 'poppins'
+    },
   });
