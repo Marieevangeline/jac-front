@@ -4,7 +4,7 @@ import Style from "../../Style";
 
 
 const PasswordTextInput = () => {
-  const [number, setText] = React.useState("null");
+  const [number, setText] = React.useState("");
 
   return (
     <View>
