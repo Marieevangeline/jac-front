@@ -16,14 +16,14 @@ export default StyleSheet.create({
       textAlignVertical: 'auto',     
     },
     text_input: {
-      borderBottomWidth: 1,
-      borderBottomWidth : 'DDDEE',
-      marginHorizontal: 20,
-
+        minWidth: 200,
+       borderBottomWidth: 1,
+       borderBottomColor : '#DDDEE1',
+       marginHorizontal: 20,
     },
     input: {
       margin: 20,
-      borderWidth: 2,
+      borderWidth: 1,
       flexDirection: "row"
     },
 
