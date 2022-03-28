@@ -10,8 +10,7 @@ function LoginView ({navigation}:any) {
     return (
     <View style={Style.container}>
       <Image source={require('../../assets/logo_UNICEF.png')} />
-      <Text>Ecran de connexion</Text>
-      <Text>Connexion à mon compte UNICEF</Text>
+      <Text style={{fontSize:24,fontFamily:'Poppins',fontWeight:'bold',margin:20,marginRight:55}}>Connexion à mon compte UNICEF</Text>
       <EmailTextInput/>
       <PasswordTextInput/>
       <Button title="Se connecter" onPress={() => login()} />
