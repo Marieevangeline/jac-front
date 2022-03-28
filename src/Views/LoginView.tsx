@@ -8,19 +8,23 @@ import Style from '../../Style';
 function LoginView ({navigation}:any) {
   const { login } = useAuth();
   return (
-  <View style={Style.container}>
-    <Image source={require('../../assets/logo_UNICEF.png')} />
-    <Text style={{fontSize:24,fontFamily:'Poppins',fontWeight:'bold',margin:20,marginRight:55}}>Connexion à mon compte UNICEF</Text>
-    <EmailTextInput/>
+   <View style={Style.container}>
+     <Image source={require('../../assets/logo_UNICEF.png')} />
+     <Text style={{fontSize:24,fontFamily:'Poppins',fontWeight:'bold',margin:20,marginRight:55}}>Connexion à mon compte UNICEF</Text>
+     <EmailTextInput/>
     <PasswordTextInput/>
     <View style={{marginVertical:20}}>
-     <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
+      <Text onPress={() => navigation.navigate('ForgetPassword')} style={Style.text_button}> Mot de passe oublié ? </Text>
+     </View>
+     <Button title="Se connecter" onPress={() => login()} />
+     <View style={{marginVertical:20}}>
+       <Text> Pas encore inscrit ? </Text><Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
+     </View>
     </View>
-    <Button title="Se connecter" onPress={() => login()} />
-    <Text> Pas encore inscrit ? </Text><Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
-  </View>
-);
-}
+  );
+ }
+    
+  
 export default LoginView;
 
 
