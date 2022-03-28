@@ -15,11 +15,16 @@ export default StyleSheet.create({
       fontStyle: 'normal',
       textAlignVertical: 'auto',     
     },
-    input: {
-      margin: 12,
+    text_input: {
       borderBottomWidth: 1,
       borderBottomWidth : 'DDDEE',
-      padding: 10,
-      frontFamily: 'poppins'
+      marginHorizontal: 20,
+
     },
+    input: {
+      margin: 20,
+      borderWidth: 2,
+      flexDirection: "row"
+    },
+
   });

@@ -8,6 +8,7 @@ const PasswordTextInput = () => {
 
   return (
     <View>
+      
       <Image source={require('../../assets/croise-les-yeux.png')} />
       <TextInput
         style={Style.input}
