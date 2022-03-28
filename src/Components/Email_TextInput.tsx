@@ -7,10 +7,10 @@ const EmailTextInput = () => {
   const [text, setText] = useState('');
   
   return (
-    <View style={{padding: 10}}>
+    <View style={Style.input}>
       <Image source={require('../../assets/@.png')} />
       <TextInput
-        style={Style.input}
+        style={Style.text_input}
         onChangeText={newText => setText(newText)}
         defaultValue={text}
         placeholder="Adresse mail"

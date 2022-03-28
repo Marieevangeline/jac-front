@@ -7,11 +7,10 @@ const PasswordTextInput = () => {
   const [number, setText] = React.useState("");
 
   return (
-    <View>
-      
-      <Image source={require('../../assets/croise-les-yeux.png')} />
+    <View style={Style.input}>
+    <Image source={require('../../assets/croise-les-yeux.png')} />
       <TextInput
-        style={Style.input}
+        style={Style.text_input}
         onChangeText={newNumber => setText(newNumber)}
         defaultValue={number}
         placeholder="Mot de passe"
