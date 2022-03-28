@@ -8,7 +8,7 @@ const PasswordTextInput = () => {
 
   return (
     <View style={Style.input}>
-    <Image source={require('../../assets/croise-les-yeux.png')} />
+    <Image source={require('../../assets/fermer_a_cle.png')} />
       <TextInput
         style={Style.text_input}
         onChangeText={newNumber => setText(newNumber)}
@@ -16,6 +16,7 @@ const PasswordTextInput = () => {
         placeholder="Mot de passe"
         keyboardType="numeric"
       />
+    <Image source={require('../../assets/croise-les-yeux')} />
     </View>
   );
 };
