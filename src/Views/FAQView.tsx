@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import React from "react";
 import { Text, View } from "react-native";
-import Style from "../../Style";
+import Style from "../../Styles/Style_home";
 
 function FAQView(props: any) {
     return(

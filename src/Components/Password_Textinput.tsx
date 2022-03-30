@@ -1,6 +1,6 @@
 import React from "react";
 import { View, TextInput, Image} from "react-native";
-import Style from "../../Style";
+import Style from "../../Styles/Style_home";
 
 
 const PasswordTextInput = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, Button } from "react-native";
-import Style from "../../Style";
+import Style from "../../Styles/Style_home";
 
 function ForgetPassword({navigation}:any) {
     return(

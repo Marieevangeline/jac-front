@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 
 import { View, TextInput, Image } from "react-native";
-import Style from "../../Style";
+import Style from "../../Styles/Style_home";
 
 const EmailTextInput = () => {
   const [text, setText] = useState('');
@@ -13,7 +13,7 @@ const EmailTextInput = () => {
         style={Style.text_input}
         onChangeText={newText => setText(newText)}
         defaultValue={text}
-        placeholder="Adresse mail"
+        placeholder="Adresse email"
        />
     </View>
   );
