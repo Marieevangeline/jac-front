@@ -15,6 +15,8 @@ export default StyleSheet.create({
       fontStyle: 'normal',
       textAlignVertical: 'auto',     
     },
+
+
     text_input: {
         minWidth: 200,
        borderBottomWidth: 1,
