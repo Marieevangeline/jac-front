@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, ScrollView, View, Button, RefreshControlBase } from 'react-native';
-import Style from '../../Style';
+import Style from '../../Styles/Style_home';
 
 function signupview() {
     return (
