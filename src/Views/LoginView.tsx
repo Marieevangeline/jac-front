@@ -13,12 +13,13 @@ function LoginView ({navigation}:any) {
      <Text style={{fontSize:24,fontFamily:'Poppins',fontWeight:'bold',margin:20,marginRight:55}}>Connexion à mon compte UNICEF</Text>
      <EmailTextInput/>
     <PasswordTextInput/>
-    <View style={{margin:20, width:"90%", flexDirection:"row"}}>
+    <View style={{marginHorizontal:20, marginBottom:15, flexDirection: "row-reverse", width:"90%"}}>
       <Text onPress={() => navigation.navigate('Changemotdepasse')} style={Style.text_button}> Mot de passe oublié ? </Text>
      </View>
      <Button title="Se connecter" onPress={() => login()} />
-     <View style={{marginVertical:20,flexDirection:"row"}}>
-       <Text> Pas encore inscrit ? </Text><Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
+     <View style={{marginVertical:20, flexDirection:"row"}}>
+       <Text> Pas encore inscrit ? </Text>
+       <Text onPress={() => navigation.navigate('SignUp')} style={Style.text_button}> S'inscrire </Text>
      </View>
     </View>
   );

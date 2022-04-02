@@ -25,7 +25,6 @@ export default StyleSheet.create({
     },
     input: {
       margin: 20,
-      borderWidth: 1,
       flexDirection: "row"
     },
 
